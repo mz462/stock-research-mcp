@@ -7,6 +7,9 @@ import tempfile
 # Set test environment before importing modules
 os.environ["ALPHA_VANTAGE_API_KEY"] = "test_av_key"
 os.environ["FINNHUB_API_KEY"] = "test_finnhub_key"
+os.environ["ALPACA_API_KEY"] = "test_alpaca_key"
+os.environ["ALPACA_SECRET_KEY"] = "test_alpaca_secret"
+os.environ["ALPACA_PAPER"] = "true"
 
 
 @pytest.fixture

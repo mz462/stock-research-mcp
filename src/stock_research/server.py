@@ -11,6 +11,7 @@ from stock_research.tools.analysts import register_analyst_tools
 from stock_research.tools.sentiment import register_sentiment_tools
 from stock_research.tools.technicals import register_technical_tools
 from stock_research.tools.macro import register_macro_tools
+from stock_research.tools.trading import register_trading_tools
 from stock_research.services.cache import init_cache, close_cache
 
 
@@ -34,6 +35,7 @@ def register_all_tools():
     register_sentiment_tools(mcp)
     register_technical_tools(mcp)
     register_macro_tools(mcp)
+    register_trading_tools(mcp)
 
 
 # Register tools at module load time
